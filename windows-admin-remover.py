@@ -39,4 +39,4 @@ usernames = list_users()
 username = input("Enter the username from the above list: ")
 
 add_user_to_group(username)
-remove_from_group(username)
+remove_user_from_group(username)
