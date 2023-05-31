@@ -25,7 +25,7 @@ def add_user_to_group(username):
 
 
 # Removing user from 'Administrators' group
-def remove_from_group(username):
+def remove_user_from_group(username):
 
     remove_user_from_group = f"net localgroup Administrators {username} /delete"
     subprocess.run(remove_user_from_group, shell=True, check=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
